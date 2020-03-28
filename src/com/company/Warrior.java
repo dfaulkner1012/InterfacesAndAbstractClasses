@@ -17,7 +17,7 @@ public class Warrior extends Character implements FightingMoves{
 
     @Override
     public void lowAttack() {
-
+        System.out.println(this.getCharacterName() + " evades the attack and counters with a paint brush throw");
     }
 
     @Override

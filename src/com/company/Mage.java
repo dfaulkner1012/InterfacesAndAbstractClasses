@@ -22,7 +22,7 @@ public class Mage extends Character implements FightingMoves{
 
     @Override
     public void distanceAttack() {
-
+        System.out.println(this.getCharacterName() + " waves her wand in the air and performs a healing spell for the High Elf");
     }
 
     @Override

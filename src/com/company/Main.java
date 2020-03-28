@@ -55,5 +55,11 @@ public class Main {
     	*/
 	    FightingMoves elf = new Elf("High Elf");
         elf.highAttack();
+
+        FightingMoves warrior = new Warrior("Bob Ross");
+        warrior.lowAttack();
+
+        FightingMoves mage = new Mage("Glitter Queen");
+        mage.distanceAttack();
     }
 }
