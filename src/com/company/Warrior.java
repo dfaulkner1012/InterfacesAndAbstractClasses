@@ -7,12 +7,17 @@ public class Warrior extends Character implements FightingMoves{
 
     @Override
     public boolean hasWon() {
-        return false;
+        if (hasWon()) {
+            numberOfWins++;
+        } else {
+            numberOfLosses++;
+        }
+        return hasWon();
     }
 
     @Override
     public void highAttack() {
-
+        System.out.println(this.getCharacterName() + " throws an even larger paint brush for an high attack against Glitter Queen");
     }
 
     @Override
@@ -27,6 +32,6 @@ public class Warrior extends Character implements FightingMoves{
 
     @Override
     public void shortRangeAttack() {
-
+        System.out.println(this.getCharacterName() + " evades the attack once again and escapes to higher ground");
     }
 }

@@ -61,5 +61,17 @@ public class Main {
 
         FightingMoves mage = new Mage("Glitter Queen");
         mage.distanceAttack();
+
+        warrior.highAttack();
+
+        mage.shortRangeAttack();
+
+        elf.distanceAttack();
+
+        warrior.shortRangeAttack();
+
+
+
+
     }
 }

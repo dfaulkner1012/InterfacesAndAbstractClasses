@@ -7,7 +7,12 @@ public class Mage extends Character implements FightingMoves{
 
     @Override
     public boolean hasWon() {
-        return false;
+        if (hasWon()) {
+            numberOfWins++;
+        } else {
+            numberOfLosses++;
+        }
+        return hasWon();
     }
 
     @Override
@@ -27,6 +32,6 @@ public class Mage extends Character implements FightingMoves{
 
     @Override
     public void shortRangeAttack() {
-
+        System.out.println(this.getCharacterName() + " takes major damage and returns to the woods to recover");
     }
 }

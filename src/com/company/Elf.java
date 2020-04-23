@@ -27,7 +27,7 @@ public class Elf extends Character implements FightingMoves{
 
     @Override
     public void distanceAttack() {
-
+        System.out.println(this.getCharacterName() + " shoots his arrows one last time to take out Bob Ross");
     }
 
     @Override
